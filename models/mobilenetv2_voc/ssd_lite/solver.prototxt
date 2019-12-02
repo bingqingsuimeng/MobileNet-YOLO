@@ -1,5 +1,5 @@
-train_net: "models/mobilenetv2_voc/ssd_lite/train.prototxt"
-test_net: "models/mobilenetv2_voc/ssd_lite/test.prototxt"
+train_net: "train.prototxt"
+test_net: "test.prototxt"
 test_iter: 4952
 test_interval: 1000
 base_lr: 0.0005
@@ -10,7 +10,7 @@ gamma: 0.2
 #momentum: 0.9
 weight_decay: 0.000004
 snapshot: 1000
-snapshot_prefix: "models/mobilenetv2_voc/ssd_lite/ssd_lite_deploy"
+snapshot_prefix: "snapshot/mobilenet"
 solver_mode: GPU
 debug_info: false
 snapshot_after_train: true

@@ -2931,7 +2931,7 @@ layer {
   top: "ssd/conv10/expand_mbox_conf"
 
   convolution_param {
-    num_output: 126
+    num_output: 18
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3029,7 +3029,7 @@ layer {
   top: "conv52_mbox_conf"
 
   convolution_param {
-    num_output: 126
+    num_output: 18
     pad: 1
     kernel_size: 3
     weight_filler {
@@ -3128,7 +3128,7 @@ layer {
   top: "ssd/conv2_mbox_conf"
 
   convolution_param {
-    num_output: 126
+    num_output: 18
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3226,7 +3226,7 @@ layer {
   top: "ssd/conv4_mbox_conf"
 
   convolution_param {
-    num_output: 126
+    num_output: 18
     pad: 1
     kernel_size: 3
     weight_filler {
@@ -3326,7 +3326,7 @@ layer {
   top: "ssd/conv6_mbox_conf"
 
   convolution_param {
-    num_output: 126
+    num_output: 18
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3424,7 +3424,7 @@ layer {
   top: "ssd/conv8_mbox_conf"
 
   convolution_param {
-    num_output: 126
+    num_output: 18
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3527,7 +3527,7 @@ layer {
     shape {
       dim: 0
       dim: -1
-      dim: 21
+      dim: 3
     }
   }
 }
@@ -3560,7 +3560,7 @@ layer {
     phase: TEST
   }
   detection_output_param {
-    num_classes: 21
+    num_classes: 3
     share_location: true
     background_label_id: 0
     nms_param {

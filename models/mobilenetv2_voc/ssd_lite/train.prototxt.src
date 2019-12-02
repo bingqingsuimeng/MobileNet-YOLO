@@ -2978,7 +2978,7 @@ layer {
   top: "ssd/conv10/expand_mbox_conf"
 
   convolution_param {
-    num_output: 18
+    num_output: 126
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3076,7 +3076,7 @@ layer {
   top: "conv52_mbox_conf"
 
   convolution_param {
-    num_output: 18
+    num_output: 126
     pad: 1
     kernel_size: 3
     weight_filler {
@@ -3175,7 +3175,7 @@ layer {
   top: "ssd/conv2_mbox_conf"
 
   convolution_param {
-    num_output: 18
+    num_output: 126
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3273,7 +3273,7 @@ layer {
   top: "ssd/conv4_mbox_conf"
 
   convolution_param {
-    num_output: 18
+    num_output: 126
     pad: 1
     kernel_size: 3
     weight_filler {
@@ -3373,7 +3373,7 @@ layer {
   top: "ssd/conv6_mbox_conf"
 
   convolution_param {
-    num_output: 18
+    num_output: 126
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3471,7 +3471,7 @@ layer {
   top: "ssd/conv8_mbox_conf"
 
   convolution_param {
-    num_output: 18
+    num_output: 126
     kernel_size: 1
     weight_filler {
       type: "msra"
@@ -3587,7 +3587,7 @@ layer {
     loc_loss_type: SMOOTH_L1
     conf_loss_type: LOGISTIC
     loc_weight: 1.0
-    num_classes: 3
+    num_classes: 21
     share_location: true
     match_type: PER_PREDICTION
     overlap_threshold: 0.5
